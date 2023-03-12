@@ -12,6 +12,12 @@
 * Deploy contract: flow project deploy
 * Run tests: flow project test
 
+## Accounts
+* flow -n mainnet accounts get 0xe4954331e8b96163
+* flow keys generate
+* flow accounts create —network mainnet —signer alice —key <PUBLIC_KEY>
+* flow transactions send ./tx.cdc 1.0 0x33dc84809074c4e7 --payer wallet --proposer wallet --authorizer wallet -n mainnet
+
 ### 👋 Welcome Flow Developer!
 Welcome to your new Flow project. We only provided you with bare minimum to get started, which is the standard Cadence folder structure and a flow.json configuration with standard contracts defined.
 
