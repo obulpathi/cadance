@@ -1,4 +1,4 @@
-pub contract BasicToken {
+pub contract HelloToken {
 
     // Vault
     //
@@ -11,7 +11,7 @@ pub contract BasicToken {
     // are defined in, so there is no way for a malicious user to create Vaults
     // out of thin air. A special Minter resource or constructor function needs to be defined to mint
     // new tokens.
-    //
+
     pub resource Vault {
 
 		// keeps track of the total balance of the account's tokens
@@ -72,7 +72,7 @@ pub contract BasicToken {
         // The domain must be `storage`, `private`, or `public`
         // the identifier can be any name
         let vault <- self.createVault()
-        self.account.save(<-vault, to: /storage/CadenceFungibleTokenTutorialVault)
+        self.account.save(<-vault, to: /storage/HelloTokenVault)
     }
 }
 
